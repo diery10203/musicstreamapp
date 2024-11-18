@@ -13,31 +13,31 @@ const charts = [
     {
         id: '1', title: 'Top 50 Canada', description: 'Daily chart-toppers update', image: require('./assets/Home_Audio Listing/Container_3.png'), 
         songs: [
-            { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png') },
-            { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png') },
-            { id: '3', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png') },
-            { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png') },
-            { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png') },
-            { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png') }
+            { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png'), uri: require('./assets/Song/zig.mp3') },
+            { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '3', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png'), uri: require('./assets/Song/zig.mp3') },
+            { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png'), uri: require('./assets/Song/zig.mp3') },
+            { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png'), uri: require('./assets/Song/zig.mp3') },
+            { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png'), uri: require('./assets/Song/zig.mp3') }
         ]},
     { id: '2', title: 'Top 50 Global', description: 'Daily chart-toppers update', image: require('./assets/Home_Audio Listing/Container_4.png'),
         songs: [
-        { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_101.png') },
-        { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_106.png') },
-        { id: '3', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_107.png') },
-        { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png') },
-        { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png') },
-        { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png') }
+        { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_101.png'), uri: require('./assets/Song/cao20.mp3') },
+        { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_106.png'), uri: require('./assets/Song/cao20.mp3') },
+        { id: '3', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_107.png'), uri: require('./assets/Song/cao20.mp3') },
+        { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png'), uri: require('./assets/Song/cao20.mp3') },
+        { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png'), uri: require('./assets/Song/cao20.mp3') },
+        { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png'), uri: require('./assets/Song/cao20.mp3') }
     ]
      },
     { id: '3', title: 'Top 50 USA', description: 'Daily chart-toppers update', image: require('./assets/Home_Audio Listing/Container_5.png'),
         songs: [
-            { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_105.png') },
-            { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_101.png') },
-            { id: '3', stitle: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png') },
-            { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png') },
-            { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png') },
-            { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png') }]
+            { id: '1', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_105.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '2', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_101.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '3', stitle: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '4', title: 'FLOWER', artist: 'Jessica Gonzalez', plays: '2,1M', duration: '3:36', image: require('./assets/My_Library/Image_102.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '5', title: 'Shape of You', artist: 'Anthony Taylor', plays: '68M', duration: '03:35', image: require('./assets/My_Library/Image_103.png'), uri: require('./assets/Song/cao20.mp3') },
+            { id: '6', title: 'Blinding Lights', artist: 'Brian Bailey', plays: '93M', duration: '04:39', image: require('./assets/My_Library/Image_104.png'), uri: require('./assets/Song/cao20.mp3') }]
      },
 ];
 
@@ -235,6 +235,10 @@ export default function App({ navigation, route }) {
                 <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('Lirary', { user })}>
                     <Icon name="person-outline" size={24} color="#888" />
                     <Text style={styles.footerText}>Profile</Text>
+                </TouchableOpacity>
+                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('ChatBox')}>
+                    <Icon name="person-outline" size={24} color="#888" />
+                    <Text style={styles.footerText}>Support</Text>
                 </TouchableOpacity>
             </View>
         </View>

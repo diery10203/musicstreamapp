@@ -19,10 +19,13 @@ export default function App({navigation}) {
           library: [
             {
               id: '1',
-              name: 'Mer Watson',
-              followers: '1.234K Followers',
-              isFollowing: true,
-              type: 'artist',
+              trackTitle: 'FLOWER',
+              artist: 'Jessica Gonzalez',
+              plays: '2.1M',
+              duration: '3:36',
+              isLiked: true,
+              type: 'track',
+              image: require('./assets/AudioListing/Image89.png'),
             },
             {
               id: '2',
@@ -42,8 +45,8 @@ export default function App({navigation}) {
               title: 'My Favorite Songs',
               description: 'A collection of my favorite tracks.',
               songs: [
-                { trackTitle: 'Sunshine', artist: 'Alice Brown', duration: '3:45' },
-                { trackTitle: 'Moonlight', artist: 'David White', duration: '4:20' },
+                { trackTitle: 'Sunshine', artist: 'Alice Brown', duration: '3:45',audioFile: require('./assets/Song/zig.mp3'), image: require('./assets/AudioListing/Image89.png') },
+                { trackTitle: 'Moonlight', artist: 'David White', duration: '4:20', audioFile: require('./assets/Song/cao20.mp3') },
               ],
               img: require('./assets/AudioListing/Image88.png'), 
             },
@@ -55,7 +58,7 @@ export default function App({navigation}) {
                 { trackTitle: 'Push It', artist: 'Mark Smith', duration: '3:10' },
                 { trackTitle: 'Run Fast', artist: 'Emma Stone', duration: '2:50' },
               ],
-              img: require('./assets/AudioListing/Image88.png'), 
+              img: require('./assets/AudioListing/Image89.png'), 
             },
             // Các playlist khác...
           ],
@@ -67,8 +70,8 @@ export default function App({navigation}) {
               releaseDate: '2022-05-12',
               img: require('./assets/AudioListing/Image88.png'), 
               tracks: [
-                { trackTitle: 'Track 1', duration: '3:30' },
-                { trackTitle: 'Track 2', duration: '4:15' },
+                { trackTitle: 'Track 1', duration: '3:40', img: require('./assets/AudioListing/Image88.png'), audioFile: require('./assets/Song/zig.mp3')},
+                { trackTitle: 'Track 2', duration: '4:00',img: require('./assets/AudioListing/Image88.png'),  audioFile: require('./assets/Song/cao20.mp3')},
               ],
             },
             {
@@ -78,8 +81,8 @@ export default function App({navigation}) {
               releaseDate: '2021-10-05',
               img: require('./assets/AudioListing/Image88.png'), 
               tracks: [
-                { trackTitle: 'Track 1', duration: '3:40' },
-                { trackTitle: 'Track 2', duration: '4:00' },
+                { trackTitle: 'Track 1', duration: '3:40', img: require('./assets/AudioListing/Image89.png'), audioFile: require('./assets/Song/zig.mp3')},
+                { trackTitle: 'Track 2', duration: '4:00',img: require('./assets/AudioListing/Image88.png'),  audioFile: require('./assets/Song/zig.mp3')},
               ],
             },
             // Các album khác...
@@ -108,10 +111,10 @@ export default function App({navigation}) {
 
                 {/* Buttons */}
                 <View style={styles.buttonContainer}>
-                    <TouchableOpacity style={styles.createAccountButton} onPress={()=>navigation.navigate('Login', {users}) }>
+                    <TouchableOpacity style={styles.createAccountButton} onPress={()=>navigation.navigate('Sign', {users}) }>
                         <Text style={styles.createAccountText}>Create an account</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.loginButton} onPress={()=>navigation.navigate('Sign', {users})}>
+                    <TouchableOpacity style={styles.loginButton} onPress={()=>navigation.navigate('Login', {users})}>
                         <Text style={styles.loginText}>I already have an account</Text>
                     </TouchableOpacity>
                 </View>

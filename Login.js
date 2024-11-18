@@ -4,8 +4,8 @@ import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
 
 export default function LoginScreen({ navigation, route }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('admin');
+  const [password, setPassword] = useState('123');
   const { users } = route.params;
   const handleLogin = () => {
     const user = users.find(u => u.username === username && u.password === password);

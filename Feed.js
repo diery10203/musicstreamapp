@@ -186,6 +186,10 @@ export default function FeedScreen({navigation,route}) {
                     <Icon name="person-outline" size={24} color="#888" />
                     <Text style={styles.footerText}>Profile</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('ChatBox')}>
+                    <Icon name="person-outline" size={24} color="#888" />
+                    <Text style={styles.footerText}>Support</Text>
+                </TouchableOpacity>
             </View>
        
         </View>

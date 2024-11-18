@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList, Image, TouchableOpacity } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/Ionicons';
-export default function LibraryScreen({navigation, route }) {
+export default function LibraryScreen({ navigation, route }) {
   const { user } = route.params;
 
   const renderLibraryItem = ({ item }) => {
@@ -47,21 +47,17 @@ export default function LibraryScreen({navigation, route }) {
         </TouchableOpacity>
       </View>
       <View style={styles.tabContainer}>
-        <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Playlist', {user})}>
+        <TouchableOpacity style={styles.tab} onPress={() => navigation.navigate('Playlist', { user })}>
           <Text style={styles.tabText}>Playlists</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Abuml', {user})}>
-          <Text style={styles.tabText}>New tag</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Playlist', {user})}>
+
+        <TouchableOpacity style={styles.tab} onPress={() => navigation.navigate('Playlist', { user })}>
           <Text style={styles.tabText}>Songs</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Abuml', {user})}>
+        <TouchableOpacity style={styles.tab} onPress={() => navigation.navigate('Abuml', { user })}>
           <Text style={styles.tabText}>Albums</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.tab} onPress={()=>navigation.navigate('Abuml', {user})}>
-          <Text style={styles.tabText}>Artists</Text>
-        </TouchableOpacity>
+
       </View>
       <FlatList
         data={user.library}
@@ -69,24 +65,28 @@ export default function LibraryScreen({navigation, route }) {
         renderItem={renderLibraryItem}
       />
 
-<View style={styles.footer}>
-                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('Home_Audio', {user})}>
-                    <Icon name="home-outline" size={24} color="#888" />
-                    <Text style={styles.footerText}>Home</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('Seach', {user})}>
-                    <Icon name="search-outline" size={24} color="#888" />
-                    <Text style={styles.footerText}>Search</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('Feed', {user})}>
-                    <Icon name="layers-outline" size={24} color="#888" />
-                    <Text style={styles.footerText}>Feed</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.footerItem} onPress={()=>navigation.navigate('Lirary', { user })}>
-                    <Icon name="person-outline" size={24} color="#888" />
-                    <Text style={styles.footerText}>Profile</Text>
-                </TouchableOpacity>
-            </View>
+      <View style={styles.footer}>
+        <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Home_Audio', { user })}>
+          <Icon name="home-outline" size={24} color="#888" />
+          <Text style={styles.footerText}>Home</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Seach', { user })}>
+          <Icon name="search-outline" size={24} color="#888" />
+          <Text style={styles.footerText}>Search</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Feed', { user })}>
+          <Icon name="layers-outline" size={24} color="#888" />
+          <Text style={styles.footerText}>Feed</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('Lirary', { user })}>
+          <Icon name="person-outline" size={24} color="#888" />
+          <Text style={styles.footerText}>Profile</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.footerItem} onPress={() => navigation.navigate('ChatBox')}>
+          <Icon name="person-outline" size={24} color="#888" />
+          <Text style={styles.footerText}>Support</Text>
+        </TouchableOpacity>
+      </View>
 
 
     </View>
@@ -187,7 +187,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#888',
   },
-  footer: { flexDirection: 'row', justifyContent: 'space-around', paddingVertical: 16, backgroundColor: '#fff', borderTopWidth: 1, borderColor: '#ddd' },
+  footer: { flexDirection: 'row', justifyContent: 'space-around', paddingVertical: 16,  borderTopWidth: 1, borderColor: '#ddd' },
   footerItem: { alignItems: 'center' },
   footerText: { fontSize: 12, color: '#888', marginTop: 4 },
 });
