@@ -55,7 +55,7 @@ export default function App() {
       <Stack.Screen name="Sign" component={Sign}></Stack.Screen>
       {/* <Stack.Screen name="ChatBox" component={ChatBox} options={{headerTitle :'' , headerTransparent : false}}></Stack.Screen> */}
       <Stack.Screen name="PlayListScren" component={PlayListScren}></Stack.Screen>
-      
+      <Stack.Screen name="AlbumDetailScreen" component={AlbumDetailScreen}></Stack.Screen>
      
     </Stack.Navigator>
     
